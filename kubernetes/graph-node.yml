@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: graph-node-{{orc}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orc-{{orc}}
+      function: graph-node
+  template:
+    metadata:
+      labels:
+        app: orc-{{orc}}
+        function: graph-node
+    spec:
+      containers:
+      - name: my-container
+        image: nicoor/mock_service:v1.1
+        args: []
+        env:
+        - name: GREETING
+          value: "Warm greetings to"

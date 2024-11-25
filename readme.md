@@ -1,3 +1,3 @@
 # Sauron
 
-An observability and data visability platform powered by OpenTelemetry python instrumentation and Jaeger.
+An observability and data visibility platform powered by OpenTelemetry python instrumentation and Jaeger.
